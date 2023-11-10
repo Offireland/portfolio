@@ -1,0 +1,54 @@
+/*Base*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+input,
+textarea,
+button,
+body{
+    font-family: var(--body-font);
+    font-size: var(--normail-font-size);
+}
+/*Header & Nav*/
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+}
+
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo{
+    color: var(--title-color);
+}
+
+/*Theme*/
+.nav__buttons{
+    display: flex;
+    align-items: center;
+}
+
+.change-theme{
+    color: var(--title-color);
+    cursor: pointer;
+    transition: color .3s;
+}
+
+/*Variables Dark theme*/
+body.dark-theme{
+    
+}
